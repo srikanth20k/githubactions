@@ -1,18 +1,11 @@
 from src.oparations import add,sub
 
 
-def test_add(a,b):
-    a = 1
-    b = 2
-    assert add(a,b) == 3
-    a = 0
-    b = 1
-    assert add(a+b) == 1
+def test_add():
+    assert add(2,3)==1
+    assert add(-1,1)==0
+  
     
 def test_sub(a,b):
-    a = 1
-    b = 2
-    assert sub(a,b) ==- 1
-    a = 3
-    b = 1
-    assert sub(a,b) == 2
+    assert sub(3,2)==1
+    assert sub(9,2)==7
